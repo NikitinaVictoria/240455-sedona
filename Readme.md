@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Виктория Никитина](https://up.htmlacademy.ru/htmlcss/14/user/240455).
-* Наставник: [Ирина Шефер](https://htmlacademy.ru/profile/shefer).".
+* Наставник: [Ирина Шефер](https://htmlacademy.ru/profile/shefer).
 
 ---
 
