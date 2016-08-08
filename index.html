@@ -21,11 +21,11 @@
             <li>
               <a href="#">Гостиницы</a>
             </li>
+            <li class="index-logo">
+              <a href="index.html"><img src="http://placehold.it/150x100" width="138" height="70" alt="Sedona"></a>
+            </li>
           </ul>
         </nav>
-        <div class="index-logo">
-          <img src="http://placehold.it/150x100">
-        </div>
       </div>
     </header>
     <main class="container">
@@ -33,54 +33,52 @@
         <span>Welcome</span>
         <p class="lead-desc">- to the gorgeous -</p>
         <h1>Sedona</h1>
-        <p class="lead-slogan">"Because the Grand<br>
-          Canyon sucks!"</p>
+        <p class="lead-slogan">"Because the Grand Canyon sucks!"</p>
       </div>
       <section class="features">
         <div class="features-intro">
-          <b class="features-name">Седона - небольшой городок в Аризоне,<br>
-             заслуживающий большего!</b>
+          <p class="features-name">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
         <div class="features-item">
           <img src="http://placehold.it/150x100">
-            <b class="features-name">Настоящий<br>городок</b>
+            <p class="features-name">Настоящий городок</p>
             <p>- № 1 -</p>
             <p>Седона - не аттракцион для туристов,<br>там течет своя жизнь</p>
         </div>
         <div class="features-item">
           <img src="http://placehold.it/150x100">
-          <b class="features-name">Жилье</b>
+          <p class="features-name">Жилье</p>
           <p>Рекомендуем пожить в настоящем<br>мотеле, все как в кино!</p>
         </div>
         <div class="features-item">
           <img src="http://placehold.it/150x100">
-          <b class="features-name">Еда</b>
+          <p class="features-name">Еда</p>
           <p>Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
         </div>
         <div class="features-item">
           <img src="http://placehold.it/150x100">
-          <b class="features-name">Сувениры</b>
+          <p class="features-name">Сувениры</p>
           <p>Не только китайского, но и местного<br>производства!</p>
         </div>
         <div class="features-item">
           <img src="http://placehold.it/150x100">
-          <b class="features-name">Там есть<br>мост дьявола</b>
+          <p class="features-name">Там есть мост дьявола</p>
           <p>- № 2 -</p>
           <p >Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
         </div>
         <div class="features-item">
-          <b class="features-name">Небольшая<br>площадь</b>
+          <p class="features-name">Небольшая площадь</p>
           <p>- № 3 -</p>
           <p>Все достопримечательности<br>находятся очень близко</p>
         </div>
         <div class="features-item">
-          <b class="features-name">Красивая<br>дорога</b>
+          <p class="features-name">Красивая дорога</p>
           <p>- № 4 -</p>
           <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
         </div>
         <div class="features-item">
-          <b class="features-name">Мало<br>туристов</b>
+          <p class="features-name">Мало туристов</p>
           <p>- № 5 -</p>
           <p>Большинство едет в Гранд Каньон и<br>толпится там</p>
         </div>
@@ -89,10 +87,31 @@
         <h2>Заинтересовались?</h2>
         <p>Укажите нам предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <form action="#" method="get">
-          <input type="" name="">
-          <input type="submit" value="Найти">
-        </form>
+        <div class="sedona-map"></div>
+        <section class="search-hotel">
+          <h2>Поиск гостиницы в седоне</h2>
+          <form action="#" method="post">
+            <p>
+              <span>Дата заезда:</span>
+              <label for="arrival-date"></label>
+              <input id="arrival-date" type="text" placeholder="24 апреля 2016">
+            </p>
+            <p>
+              <span>Дата выезда:</span>
+              <label for="departure-date"></label>
+              <input id="departure-date" type="text" placeholder="4 июля 2016">
+            </p>
+            <p>
+              <span>Взрослые:</span>
+              <label for="adults"></label>
+              <input type="number" id="adults" name="adults" min="1" max="5">
+              <span>Дети:</span>
+              <label for="children"></label>
+              <input type="number" id="children" name="children" min="1" max="5">
+            </p>
+            <input type="submit" value="найти">
+          </form>
+        </section>
       </section>
     </main>
     <footer class="main-footer">
@@ -113,17 +132,5 @@
         </section>
       </div>
     </footer>
-
-
-
-
-
-
-
-
-
-
-
-
   </body>
 </html>

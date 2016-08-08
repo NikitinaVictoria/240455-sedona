@@ -21,11 +21,11 @@
             <li>
               <a href="#">Гостиницы</a>
             </li>
+            <li class="index-logo">
+              <a href="index.html"><img src="http://placehold.it/150x100" width="138" height="70" alt="Sedona"></a>
+            </li>
           </ul>
         </nav>
-        <div class="index-logo">
-          <img src="http://placehold.it/150x100">
-        </div>
       </div>
     </header>
     <main class="container">
@@ -57,19 +57,39 @@
             <input id="apartment" type="checkbox" name="apartment" value="checked">
             <label for="apartment">Апартаменты</label>
           </p>
+          <b>Стоимость в сутки (Р):</b>
+          <table class="price">
+            <tr>
+              <td>
+                от 0
+              </td>
+              <td>
+                до 3000
+              </td>
+            </tr>
+          </table>
+          <input type="range" min="0" max="3000">
           <p>
             <a href="#" class="btn">Показать</a>
           </p>
         </form>
       </section>
       <section class="result">
-        <span>Найдено:3</span>
+        <h3>Найдено:3</h3>
         <span>Сортировка:</span>
-        <span>По цене</span>
-        <a href="#" class="category">По типу</a>
-        <a href="#" class="category">По рейтингу</a>
-        <button class="prev"></button>
-        <button class="next"></button>
+        <ul>
+          <li>
+            <a href="#" class="category">По цене</a>
+          </li>
+          <li>
+            <a href="#" class="category">По типу</a>
+          </li>
+          <li>
+            <a href="#" class="category">По рейтингу</a>
+          </li>
+        </ul>
+        <span class="increase">▲</span>
+        <span class="decrease">▼</span>
       </section>
       <article>
         <img src="http://placehold.it/150x100">
@@ -120,17 +140,5 @@
         </section>
       </div>
     </footer>
-
-
-
-
-
-
-
-
-
-
-
-
   </body>
 </html>
