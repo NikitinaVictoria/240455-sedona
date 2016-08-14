@@ -1,0 +1,74 @@
+body {
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  font-weight: bold;
+  font-family: "PT Sans Narrow Bold";
+  text-transform: uppercase;
+}
+
+b {
+  font-size: 16px;
+}
+
+.features-intro,
+.features-name,
+button,
+.footer-hashtag,
+h3 {
+  font-size: 21px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.result span,
+.result ul {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.main-header,
+.features-intro,
+.text,
+button,
+.footer-copyright,
+.footer-hashtag,
+h3 {
+  line-height: 26px;
+}
+
+h2,
+.desc {
+  line-height: 24px;
+}
+
+.footer-copyright,
+.content,
+label,
+.price,
+.btn,
+b p,
+.result span,
+.result ul {
+  font-weight: normal;
+}
+
+.excerpt,
+.text,
+.desc,
+article span {
+  color: #333333;
+  font-weight: normal;
+}
+
+div:nth-of-type(2),
+div:nth-of-type(6),
+.search {
+  color: #ffffff;
+}
+
+a+span {
+  color: #666666;
+}

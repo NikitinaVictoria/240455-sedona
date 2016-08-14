@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -19,10 +20,10 @@
               <a href="#">Карта штата</a>
             </li>
             <li>
-              <a href="#">Гостиницы</a>
+              <a href="catalog.html">Гостиницы</a>
             </li>
             <li class="index-logo">
-              <a href="index.html"><img src="http://placehold.it/150x100" width="138" height="70" alt="Sedona"></a>
+              <img src="img/main logo.png" width="138" height="70" alt="Sedona"></a>
             </li>
           </ul>
         </nav>
@@ -30,66 +31,63 @@
     </header>
     <main class="container">
       <div class="lead">
-        <span>Welcome</span>
-        <p class="lead-desc">- to the gorgeous -</p>
-        <h1>Sedona</h1>
-        <p class="lead-slogan">"Because the Grand Canyon sucks!"</p>
+        <img src="img/intro.jpg" width="100%" height="100%" alt="">
       </div>
       <section class="features">
         <div class="features-intro">
-          <p class="features-name">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          <p>Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="excerpt">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
         <div class="features-item">
-          <img src="http://placehold.it/150x100">
+          <img src="img/real-town.jpg" width="1600px" height="800px" alt="Седона">
             <p class="features-name">Настоящий городок</p>
-            <p>- № 1 -</p>
-            <p>Седона - не аттракцион для туристов,<br>там течет своя жизнь</p>
+            <p class="content">- № 1 -</p>
+            <p class="content">Седона - не аттракцион для туристов,<br>там течет своя жизнь</p>
         </div>
         <div class="features-item">
-          <img src="http://placehold.it/150x100">
+          <img src="img\house.png" width="75px" height="72px" alt="">
           <p class="features-name">Жилье</p>
-          <p>Рекомендуем пожить в настоящем<br>мотеле, все как в кино!</p>
+          <p class="text">Рекомендуем пожить в настоящем<br>мотеле, все как в кино!</p>
         </div>
         <div class="features-item">
-          <img src="http://placehold.it/150x100">
+          <img src="img\burger.png" width="75px" height="72px" alt="">
           <p class="features-name">Еда</p>
-          <p>Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
+          <p class="text">Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
         </div>
         <div class="features-item">
-          <img src="http://placehold.it/150x100">
+          <img src="img\souvenir.png" width="75px" height="72px" alt="">
           <p class="features-name">Сувениры</p>
-          <p>Не только китайского, но и местного<br>производства!</p>
+          <p class="text">Не только китайского, но и местного<br>производства!</p>
         </div>
         <div class="features-item">
-          <img src="http://placehold.it/150x100">
+          <img src="img/devils-bridge.jpg" width="1600px" height="800px" alt="Мост дьявола">
           <p class="features-name">Там есть мост дьявола</p>
-          <p>- № 2 -</p>
-          <p >Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
+          <p class="content">- № 2 -</p>
+          <p class="content">Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
         </div>
         <div class="features-item">
           <p class="features-name">Небольшая площадь</p>
-          <p>- № 3 -</p>
-          <p>Все достопримечательности<br>находятся очень близко</p>
+          <p class="text">- № 3 -</p>
+          <p class="text">Все достопримечательности<br>находятся очень близко</p>
         </div>
         <div class="features-item">
           <p class="features-name">Красивая дорога</p>
-          <p>- № 4 -</p>
-          <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
+          <p class="text">- № 4 -</p>
+          <p class="text">Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
         </div>
         <div class="features-item">
           <p class="features-name">Мало туристов</p>
-          <p>- № 5 -</p>
-          <p>Большинство едет в Гранд Каньон и<br>толпится там</p>
+          <p class="text">- № 5 -</p>
+          <p class="text">Большинство едет в Гранд Каньон и<br>толпится там</p>
         </div>
       </section>
       <section class="footer">
         <h2>Заинтересовались?</h2>
-        <p>Укажите нам предполагаемые даты поездки,<br>
+        <p class="desc">Укажите нам предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <div class="sedona-map"></div>
         <section class="search-hotel">
-          <h2>Поиск гостиницы в седоне</h2>
+          <button type="button" value="Поиск гостиницы в седоне">Поиск гостиницы в Cедоне</button>
           <form action="#" method="post">
             <p>
               <span>Дата заезда:</span>
@@ -109,7 +107,7 @@
               <label for="children"></label>
               <input type="number" id="children" name="children" min="1" max="5">
             </p>
-            <input type="submit" value="найти">
+            <button type="submit" value="найти">Найти</button>
           </form>
         </section>
       </section>
@@ -127,7 +125,7 @@
         <section class="footer-copyright">
           <span>Website by</span>
           <a href="https://htmlacademy.ru">
-            <img src="http://placehold.it/150x100" alt="HTML Academy">
+            <img src="img\html-logo.png" width="113" height="39" alt="HTML Academy">
           </a>
         </section>
       </div>
