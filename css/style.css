@@ -1,10 +1,183 @@
+html,
 body {
+  margin: 0;
+  padding: 0;
+  min-height: 950px;
   font-size: 14px;
   line-height: 21px;
   color: #000000;
   font-weight: bold;
   font-family: "PT Sans Narrow Bold";
   text-transform: uppercase;
+}
+
+* { margin:0;
+ }
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-navigation {
+  min-height: 56px;
+}
+
+.main-footer::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer-hashtag {
+  width: 400px;
+  min-height: 120px;
+  float: left;
+}
+
+.footer-social {
+  width: 400px;
+  min-height: 120px;
+  float: left;
+}
+
+.footer-copyright {
+  width: 400px;
+  min-height: 120px;
+  float: left;
+}
+
+.lead {
+  min-height: 510px;
+  font-size: 0px;
+  background-image: url("../img/intro.jpg");
+}
+
+.lead-desc {
+  margin-left: 472px;
+  width: 256px;
+  height: 86px;
+  background-image: url("../img/Welcome.png");
+}
+
+h1 {
+  margin-left: 371px;
+  width: 458px;
+  height: 78px;
+  background-image: url("../img/Sedona.png");
+}
+
+.lead-slogan {
+  margin-left: 452px;
+  width: 296px;
+  height: 80px;
+  background-image: url("../img/the Grand Canyon.png");
+}
+
+.features::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.features {
+  margin-bottom: 45px;
+}
+
+.features-intro {
+  min-height: 213px;
+
+}
+
+.feature-1 {
+  min-height: 256px;
+  background: url("../img/real-town.jpg");
+}
+
+.feature-2,
+.feature-3,
+.feature-4 {
+  width: 400px;
+  min-height: 329px;
+  float: left;
+}
+
+.feature-5 {
+  min-height: 256px;
+  clear: left;
+  background: url("../img/devils-bridge.jpg");
+}
+
+.feature-6,
+.feature-7,
+.feature-8 {
+  width: 400px;
+  min-height: 256px;
+  float: left;
+}
+
+.footer {
+  min-height: 720px;
+}
+
+.search-hotel {
+  min-height: 86px;
+  width: 568px;
+  margin: 0 auto;
+}
+
+.sedona-map {
+  min-height: 473px;
+}
+
+.search {
+  width: 1056;
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
+.search::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.search-infrastructure {
+  width: 241px;
+  min-height: 217px;
+  float: left;
+}
+
+.search-housing {
+  width: 288px;
+  min-height: 217px;
+  float: left;
+}
+
+.search-price {
+  width: 328px;
+  min-height: 217px;
+  float: right;
+}
+
+.result {
+  min-height: 87px;
+  width: 1056;
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
+article {
+  min-height: 87px;
+  width: 1056;
+  padding-left: 72px;
+  padding-right: 72px;
+  min-height: 150px;
+}
+
+h3 {
+  display: inline-block;
+  vertical-align: top;
 }
 
 b {

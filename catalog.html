@@ -6,8 +6,8 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
-      <div class="container">
+    <div class="container">
+      <header class="main-header">
         <nav class="main-navigation">
           <ul>
             <li>
@@ -27,52 +27,58 @@
             </li>
           </ul>
         </nav>
-      </div>
-    </header>
+      </header>
+    </div>
     <main class="container">
       <section class="search">
         <form action="#" method="get">
-        <b>Инфраструктура</b>
-          <p>
-            <input id="pool" type="checkbox" name="pool" value="checked">
-            <label for="pool">Бассейн</label>
-          </p>
-          <p>
-            <input id="parking" type="checkbox" name="parking" value="checked">
-            <label for="parking">Парковка</label>
-          </p>
-          <p>
-            <input id="wi-fi" type="checkbox" name="wi-fi" value="checked">
-            <label for="wi-fi">wi-fi</label>
-          </p>
-          <b>Тип жилья</b>
-          <p>
-            <input id="hotel" type="checkbox" name="hotel" value="checked">
-            <label for="hotel">Гостиница</label>
-          </p>
-          <p>
-            <input id="motel" type="checkbox" name="motel" value="checked">
-            <label for="motel">Мотель</label>
-          </p>
-          <p>
-            <input id="apartment" type="checkbox" name="apartment" value="checked">
-            <label for="apartment">Апартаменты</label>
-          </p>
-          <b>Стоимость в сутки (Р):</b>
-          <table class="price">
-            <tr>
-              <td>
-                от 0
-              </td>
-              <td>
-                до 3000
-              </td>
-            </tr>
-          </table>
-          <input type="range" min="0" max="3000">
-          <p>
-            <a href="#" class="btn">Показать</a>
-          </p>
+          <div class="search-infrastructure">
+            <b>Инфраструктура</b>
+            <p>
+              <input id="pool" type="checkbox" name="pool" value="checked">
+              <label for="pool">Бассейн</label>
+            </p>
+            <p>
+              <input id="parking" type="checkbox" name="parking" value="checked">
+              <label for="parking">Парковка</label>
+            </p>
+            <p>
+              <input id="wi-fi" type="checkbox" name="wi-fi" value="checked">
+              <label for="wi-fi">wi-fi</label>
+            </p>
+          </div>
+          <div class="search-housing">
+            <b>Тип жилья</b>
+            <p>
+              <input id="hotel" type="checkbox" name="hotel" value="checked">
+              <label for="hotel">Гостиница</label>
+            </p>
+            <p>
+              <input id="motel" type="checkbox" name="motel" value="checked">
+              <label for="motel">Мотель</label>
+            </p>
+            <p>
+              <input id="apartment" type="checkbox" name="apartment" value="checked">
+              <label for="apartment">Апартаменты</label>
+            </p>
+          </div>
+          <div class="search-price">
+            <b>Стоимость в сутки (Р):</b>
+            <table class="price">
+              <tr>
+                <td>
+                  от 0
+                </td>
+                <td>
+                  до 3000
+                </td>
+              </tr>
+            </table>
+            <input type="range" min="0" max="3000">
+            <p>
+              <a href="#" class="btn">Показать</a>
+            </p>
+          </div>
         </form>
       </section>
       <section class="result">
@@ -129,8 +135,8 @@
         </p>
       </article>
     </main>
-    <footer class="main-footer">
-      <div class="container">
+    <div class="container">
+      <footer class="main-footer">
         <section class="footer-hashtag">
           <a href="#">#Visitsedona</a>
         </section>
@@ -145,7 +151,7 @@
             <img src="img\html-logo.png" width="113" height="39" alt="HTML Academy">
           </a>
         </section>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
