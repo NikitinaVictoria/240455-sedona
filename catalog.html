@@ -16,14 +16,14 @@
             <li>
               <a href="#">Фото и видео</a>
             </li>
+            <li class="index-logo">
+              <a href="index.html"><img src="img/main-logo.png" width="138" height="70" alt="Sedona"></a>
+            </li>
             <li>
               <a href="#">Карта штата</a>
             </li>
             <li>
               <a href="#">Гостиницы</a>
-            </li>
-            <li class="index-logo">
-              <a href="index.html"><img src="img/main logo.png" width="138" height="70" alt="Sedona"></a>
             </li>
           </ul>
         </nav>
@@ -31,40 +31,40 @@
     </div>
     <main class="container">
       <section class="search">
-        <form action="#" method="get">
+        <form action="#" method="post">
           <div class="search-infrastructure">
-            <b>Инфраструктура</b>
-            <p>
+            <p class="infrastructure">Инфраструктура</p>
+            <p class="pool">
               <input id="pool" type="checkbox" name="pool" value="checked">
               <label for="pool">Бассейн</label>
             </p>
-            <p>
+            <p class="parking">
               <input id="parking" type="checkbox" name="parking" value="checked">
               <label for="parking">Парковка</label>
             </p>
-            <p>
+            <p class="wi-fi">
               <input id="wi-fi" type="checkbox" name="wi-fi" value="checked">
               <label for="wi-fi">wi-fi</label>
             </p>
           </div>
           <div class="search-housing">
-            <b>Тип жилья</b>
-            <p>
+            <p class="housing">Тип жилья</p>
+            <p class="hotel">
               <input id="hotel" type="checkbox" name="hotel" value="checked">
               <label for="hotel">Гостиница</label>
             </p>
-            <p>
+            <p class="motel">
               <input id="motel" type="checkbox" name="motel" value="checked">
               <label for="motel">Мотель</label>
             </p>
-            <p>
+            <p class="apartment">
               <input id="apartment" type="checkbox" name="apartment" value="checked">
               <label for="apartment">Апартаменты</label>
             </p>
           </div>
           <div class="search-price">
-            <b>Стоимость в сутки (Р):</b>
-            <table class="price">
+            <p>Стоимость в сутки (Р):</p>
+            <table>
               <tr>
                 <td>
                   от 0
@@ -75,64 +75,79 @@
               </tr>
             </table>
             <input type="range" min="0" max="3000">
-            <p>
+            <p class="search-show">
               <a href="#" class="btn">Показать</a>
             </p>
           </div>
         </form>
       </section>
       <section class="result">
-        <h3>Найдено:3</h3>
+        <h3>Найдено: 3</h3>
         <span>Сортировка:</span>
         <ul>
           <li>
-            <a href="#" class="category">По цене</a>
+            <a href="#" class="category-price">По цене</a>
           </li>
           <li>
-            <a href="#" class="category">По типу</a>
+            <a href="#" class="category-type">По типу</a>
           </li>
           <li>
-            <a href="#" class="category">По рейтингу</a>
+            <a href="#" class="category-rating">По рейтингу</a>
           </li>
         </ul>
         <span class="increase">▲</span>
         <span class="decrease">▼</span>
       </section>
-      <article>
-        <img src="img/Amara resort & spa.jpg" width="135" height="90" alt="Amara resort & spa">
-        <h3>Amara resort & spa</h3>
-        <img src="http://placehold.it/150x100">
-        <span>Гостиница</span>
-        <span>от 3500 р.</span>
-        <p>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
-          <span>Рейтинг: 8,5</span>
-        </p>
+      <article class="hotel-1">
+        <div class="photo">
+          <img src="img/Amara resort & spa.jpg" width="135" height="90" alt="Amara resort & spa">
+        </div>
+        <div class="info">
+          <h3>Amara resort & spa</h3>
+          <p>
+            <span class="type">Гостиница</span><span class="price">от 3500 р.</span>
+          </p>
+          <a class="more" href="#">Подробнее</a>
+          <a class="reserve" href="#">Забронировать</a>
+        </div>
+        <div class="rating">
+          <img src="img/4stars.png" width="89" height="17" alt="">
+          <p>Рейтинг: 8,5</p>
+        </div>
       </article>
-      <article>
-        <img src="img/Desert quail inn.jpg" width="135" height="90" alt="Desert quail inn">
-        <h3>Desert quail inn</h3>
-        <img src="http://placehold.it/150x100">
-        <span>Гостиница</span>
-        <span>от 2000 р.</span>
-        <p>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
-          <span>Рейтинг: 8,9</span>
-        </p>
+      <article class="hotel-2">
+        <div class="photo">
+          <img src="img/Desert quail inn.jpg" width="135" height="90" alt="Desert quail inn">
+        </div>
+        <div class="info">
+          <h3>Desert quail inn</h3>
+          <p>
+            <span class="type">Гостиница</span><span class="price">от 2000 р.</span>
+          </p>
+          <a class="more" href="#">Подробнее</a>
+          <a class="reserve" href="#">Забронировать</a>
+        </div>
+        <div class="rating">
+          <img src="img/2stars.png" width="42" height="17" alt="">
+          <p>Рейтинг: 8,9</p>
+        </div>
       </article>
-      <article>
-        <img src="img/Villas at poco diablo.jpg" width="135" height="90" alt="Villas at poco diablo">
-        <h3>Villas at poco diablo</h3>
-        <img src="http://placehold.it/150x100">
-        <span>Гостиница</span>
-        <span>от 4000 р.</span>
-        <p>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
-          <span>Рейтинг: 9,2</span>
-        </p>
+      <article class="hotel-3">
+        <div class="photo">
+          <img src="img/Villas at poco diablo.jpg" width="135" height="90" alt="Villas at poco diablo">
+        </div>
+        <div class="info">
+          <h3>Villas at poco diablo</h3>
+          <p>
+            <span class="type">Гостиница</span><span class="price">от 4000 р.</span>
+          </p>
+          <a class="more" href="#">Подробнее</a>
+          <a class="reserve" href="#">Забронировать</a>
+        </div>
+        <div class="rating">
+          <img src="img/3stars.png" width="65" height="17" alt="">
+          <p>Рейтинг: 9,2</p>
+        </div>
       </article>
     </main>
     <div class="container">
