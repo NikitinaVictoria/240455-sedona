@@ -3,26 +3,30 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
       <header class="main-header">
         <nav class="main-navigation">
-          <ul>
-            <li>
+          <ul class="clearfix">
+            <li class="nav-about">
               <a href="#">Информация</a>
             </li>
-            <li>
+            <li class="nav-gallery">
               <a href="#">Фото и видео</a>
             </li>
-            <li class="index-logo">
-              <img src="img/main-logo.png" width="138" height="70" alt="Sedona"></a>
+            <li class="logo-background">
+              <img src="img/logo-background.png" width="138" height="70" alt="Sedona">
             </li>
-            <li>
+            <li class="index-logo">
+              <img src="img/logo.png" width="67" height="56" alt="Sedona">  
+            </li>
+            <li class="nav-map">
               <a href="#">Карта штата</a>
             </li>
-            <li>
+            <li class="nav-hotels">
               <a href="catalog.html">Гостиницы</a>
             </li>
           </ul>
@@ -35,47 +39,57 @@
         <h1>Sedona</h1>
         <p class="lead-slogan">"Because the Grand Canyon sucks!"</p>
       </div>
-      <section class="features">
+      <section class="features clearfix">
         <div class="features-intro">
           <p>Седона - небольшой городок в Аризоне,<br>заслуживающий большего!</p>
           <p class="excerpt">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
-        <div class="feature-1">
+        <div class="feature-sight">
             <p class="features-name">Настоящий<br>городок</p>
             <p class="number">- № 1 -</p>
             <p class="content">Седона - не аттракцион для туристов,<br>там течет своя жизнь</p>
         </div>
-        <div class="feature-2">
-          <img src="img\house.png" width="75px" height="72px" alt="">
-          <p class="features-name">Жилье</p>
-          <p class="text">Рекомендуем пожить в настоящем<br>мотеле, все как в кино!</p>
+        <div class="picture-town">
+        <img src="img/real-town.jpg " width="100%" height="auto" alt="Седона">
         </div>
-        <div class="feature-3">
-          <img src="img\burger.png" width="74px" height="70px" alt="">
-          <p class="features-name">Еда</p>
-          <p class="text">Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
+        <div class="wrapper clearfix">
+          <div class="feature-joy">
+            <img src="img/house.png" width="75px" height="72px" alt="">
+            <p class="features-name">Жилье</p>
+            <p class="text">Рекомендуем пожить в настоящем<br>мотеле, все как в кино!</p>
+          </div>
+          <div class="feature-joy">
+            <img src="img/burger.png" width="74px" height="70px" alt="">
+            <p class="features-name">Еда</p>
+            <p class="text">Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
+          </div>
+          <div class="feature-joy">
+            <img src="img/souvenir.png" width="64px" height="76px" alt="">
+            <p class="features-name">Сувениры</p>
+            <p class="text">Не только китайского, но и местного<br>производства!</p>
+          </div>
         </div>
-        <div class="feature-4">
-          <img src="img\souvenir.png" width="64px" height="76px" alt="">
-          <p class="features-name">Сувениры</p>
-          <p class="text">Не только китайского, но и местного<br>производства!</p>
+        <div class="wrapper-bridge clearfix">
+          <div class="picture-bridge">
+            <img src="img/bridge.jpg " width="100%" height="auto" alt="Мост дьявола">
+          </div>
+          <div class="feature-sight">
+            <p class="features-name">Там есть<br>мост дьявола</p>
+            <p class="number">- № 2 -</p>
+            <p class="content">Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
+          </div>
         </div>
-        <div class="feature-5">
-          <p class="features-name">Там есть<br>мост дьявола</p>
-          <p class="number">- № 2 -</p>
-          <p class="content">Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
-        </div>
-        <div class="feature-6">
+        <div class="feature-plus">
           <p class="features-name">Небольшая<br>площадь</p>
           <p class="number">- № 3 -</p>
           <p class="text">Все достопримечательности<br>находятся очень близко</p>
         </div>
-        <div class="feature-7">
+        <div class="feature-plus">
           <p class="features-name">Красивая<br>дорога</p>
           <p class="number">- № 4 -</p>
           <p class="text">Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
         </div>
-        <div class="feature-8">
+        <div class="feature-plus">
           <p class="features-name">Мало<br>туристов</p>
           <p class="number">- № 5 -</p>
           <p class="text">Большинство едет в Гранд Каньон и<br>толпится там</p>
@@ -113,7 +127,7 @@
       </section>
     </main>
     <div class="container">
-      <footer class="main-footer">
+      <footer class="main-footer clearfix">
         <section class="footer-hashtag">
           <a href="#">#Visitsedona</a>
         </section>
