@@ -23,16 +23,13 @@ body {
 }
 
 .main-navigation {
-  height: 56px;
+  width: 100%;
 }
 
 .main-navigation ul {
-  width: 100%;
   font-size: 0px;
   list-style: none;
   padding: 0;
-  margin: 0;
-  position: relative;
 }
 
 .main-navigation li {
@@ -40,37 +37,12 @@ body {
   font-size: 14px;
   float: left;
   padding: 15px 0;
+  text-align: center;
 }
 
 li.index-logo {
-  padding: 0;
-  width: 8%;
-  text-align: center;
-  position: relative;
-  z-index: 2;
-}
-
-.logo-background {
-  position: absolute;
-  padding-bottom: 0;
-  top: -15px;
-  left: 40%;
-  text-align: center;
-  z-index: 1;
-}
-
-.nav-about {
-  margin-left: 6%;
-}
-
-.nav-about,
-.nav-gallery {
-  text-align: left;
-}
-
-.nav-map,
-.nav-hotels {
-  text-align: right;
+  margin-top: -15px;
+  margin-bottom: -45px;
 }
 
 .footer-hashtag {
@@ -187,7 +159,7 @@ h1 {
 
 .feature-plus {
   min-height: 236px;
-  width: 33%;
+  width: 33.333333333333336%;
   float: left;
   padding-top: 20px;
   text-align: center;
@@ -217,13 +189,16 @@ h1 {
   background-image: url("../img/intro.jpg");
   background-position: 100% -256px;
   background-size: 100%;
+  margin: 0 6%;
+}
 
+.search-form {
+  margin: 0 6%;
 }
 
 .search-infrastructure {
   float: left;
   width: 20%;
-  margin-left: 6%;
 }
 
 .search-housing {
@@ -234,7 +209,6 @@ h1 {
 .search-price {
   width: 27%;
   float: right;
-  margin-right: 6%;
 }
 
 .infrastructure,
