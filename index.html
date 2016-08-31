@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -38,63 +39,58 @@
       </div>
       <section class="features clearfix">
         <div class="features-intro">
-          <p>Седона - небольшой городок в Аризоне,<br>заслуживающий большего!</p>
+          <p class="bla">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</p>
           <p class="excerpt">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
         <div class="feature-sight">
             <p class="features-name">Настоящий<br>городок</p>
-            <p class="number">- № 1 -</p>
-            <p class="content">Седона - не аттракцион для туристов,<br>там течет своя жизнь</p>
+            <p class="number">— № 1 —</p>
+            <p class="content">Седона — не аттракцион для туристов,<br>там течет своя жизнь</p>
         </div>
         <div class="picture-town">
-        <img src="img/real-town.jpg " width="100%" height="auto" alt="Седона">
+          <img src="img/real-town.jpg " width="100%" height="auto" alt="Седона">
         </div>
         <div class="wrapper clearfix">
-          <div class="feature-joy">
-            <img src="img/house.png" width="75px" height="72px" alt="">
+          <div class="feature-joy joy-house">
             <p class="features-name">Жилье</p>
             <p class="text">Рекомендуем пожить в настоящем<br>мотеле, все как в кино!</p>
           </div>
-          <div class="feature-joy">
-            <img src="img/burger.png" width="74px" height="70px" alt="">
+          <div class="feature-joy joy-burger">
             <p class="features-name">Еда</p>
             <p class="text">Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
           </div>
-          <div class="feature-joy">
-            <img src="img/souvenir.png" width="64px" height="76px" alt="">
+          <div class="feature-joy joy-souvenir">
             <p class="features-name">Сувениры</p>
             <p class="text">Не только китайского, но и местного<br>производства!</p>
           </div>
         </div>
-        <div class="wrapper-bridge clearfix">
-          <div class="picture-bridge">
-            <img src="img/bridge.jpg " width="100%" height="auto" alt="Мост дьявола">
-          </div>
-          <div class="feature-sight">
-            <p class="features-name">Там есть<br>мост дьявола</p>
-            <p class="number">- № 2 -</p>
-            <p class="content">Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
-          </div>
+        <div class="picture-bridge">
+          <img src="img/bridge.jpg " width="100%" height="auto" alt="Мост дьявола">
+        </div>
+        <div class="feature-sight">
+          <p class="features-name">Там есть<br>мост дьявола</p>
+          <p class="number">— № 2 —</p>
+          <p class="content">Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
         </div>
         <div class="feature-plus">
           <p class="features-name">Небольшая<br>площадь</p>
-          <p class="number">- № 3 -</p>
+          <p class="number">— № 3 —</p>
           <p class="text">Все достопримечательности<br>находятся очень близко</p>
         </div>
         <div class="feature-plus">
           <p class="features-name">Красивая<br>дорога</p>
-          <p class="number">- № 4 -</p>
+          <p class="number">— № 4 —</p>
           <p class="text">Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
         </div>
         <div class="feature-plus">
           <p class="features-name">Мало<br>туристов</p>
-          <p class="number">- № 5 -</p>
+          <p class="number">— № 5 —</p>
           <p class="text">Большинство едет в Гранд Каньон и<br>толпится там</p>
         </div>
       </section>
       <section class="footer">
         <h2>Заинтересовались?</h2>
-        <p class="desc">Укажите нам предполагаемые даты поездки,<br>
+        <p class="desc">Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <section class="search-hotel">
           <button type="button" value="Поиск гостиницы в седоне">Поиск гостиницы в Cедоне</button>
@@ -117,7 +113,7 @@
               <label for="children"></label>
               <input type="number" id="children" name="children" min="1" max="5">
             </p>
-            <button type="submit" value="найти">Найти</button>
+            <button class="btn" type="submit" value="найти">Найти</button>
           </form>
         </section>
         <div class="sedona-map"></div>
@@ -126,12 +122,12 @@
     <div class="container">
       <footer class="main-footer clearfix">
         <section class="footer-hashtag">
-          <a href="#">#Visitsedona</a>
+          <a href="#">#Visitsedona</a><span class="valign"></span>
         </section>
         <section class="footer-social">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          <a class="social-btn social-btn-tw" href="#"><span class="icon-twitter"></span>Твиттер</a>
+          <a class="social-btn social-btn-fb" href="#"><span class="icon-facebook"></span>Фейсбук</a>
+          <a class="social-btn social-btn-yt" href="#"><span class="icon-youtube"></span>>Ютуб</a>
         </section>
         <section class="footer-copyright">
           <span>Website by</span>
