@@ -93,28 +93,36 @@
         <p class="desc">Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <section class="search-hotel">
-          <button type="button" value="Поиск гостиницы в седоне">Поиск гостиницы в Cедоне</button>
-          <form action="#" method="post">
-            <p>
-              <span>Дата заезда:</span>
-              <label for="arrival-date"></label>
-              <input id="arrival-date" type="text" placeholder="24 апреля 2016">
-            </p>
-            <p>
-              <span>Дата выезда:</span>
-              <label for="departure-date"></label>
-              <input id="departure-date" type="text" placeholder="4 июля 2016">
-            </p>
-            <p>
-              <span>Взрослые:</span>
-              <label for="adults"></label>
-              <input type="number" id="adults" name="adults" min="1" max="5">
-              <span>Дети:</span>
-              <label for="children"></label>
-              <input type="number" id="children" name="children" min="1" max="5">
-            </p>
-            <button class="btn" type="submit" value="найти">Найти</button>
-          </form>
+          <div class="modal-content">
+            <button type="button" value="Поиск гостиницы в седоне">Поиск гостиницы в Cедоне</button>
+            <form action="#" method="post">
+              <p class="arrival">
+                <span>Дата заезда:</span>
+                <label for="arrival-date"></label>
+                <input id="arrival-date" type="text" placeholder="24 апреля 2016">
+                <span class="icon-calendar">Дата заезда</span>
+              </p>
+              <p class="departure">
+                <span>Дата выезда:</span>
+                <label for="departure-date"></label>
+                <input id="departure-date" type="text" placeholder="4 июля 2016">
+                <span class="icon-calendar">Дата выезда</span>
+              </p>
+              <p>
+                <span>Взрослые:</span>
+                <label for="adults"></label>
+                <span class="adults icon-minus">-</span>
+                <input id="adults" type="text" name="adults" placeholder="2">
+                <span class="adults icon-plus">+</span>
+                <span class="">Дети:</span>
+                <label for="children"></label>
+                <span class="children icon-minus">-</span>
+                <input name="children" type="text" id="children" placeholder="0">
+                <span class="children icon-plus">+</span>
+              </p>
+              <button class="btn" type="submit" value="найти">Найти</button>
+            </form>
+          </div>
         </section>
         <div class="sedona-map"></div>
       </section>
@@ -122,7 +130,7 @@
     <div class="container">
       <footer class="main-footer clearfix">
         <section class="footer-hashtag">
-          <a href="#">#Visitsedona</a><span class="valign"></span>
+          <a href="#">#Visitsedona</a>
         </section>
         <section class="footer-social">
           <a class="social-btn social-btn-tw" href="#"><span class="icon-twitter"></span>Твиттер</a>
@@ -131,9 +139,7 @@
         </section>
         <section class="footer-copyright">
           <span>Website by</span>
-          <a href="https://htmlacademy.ru">
-            <img src="img\html-logo.png" width="113" height="39" alt="HTML Academy">
-          </a>
+          <a href="https://htmlacademy.ru">Website by HTML Academy></a>
         </section>
       </footer>
     </div>

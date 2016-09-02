@@ -6,7 +6,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <div class="container">
       <header class="main-header">
         <nav class="main-navigation">
@@ -24,7 +24,7 @@
               <a href="#">Карта штата</a>
             </li>
             <li class="nav-hotels active">
-              <a href="#">Гостиницы</a>
+              <a>Гостиницы</a>
             </li>
           </ul>
         </nav>
@@ -64,21 +64,19 @@
             </p>
           </div>
           <div class="search-price">
-            <p class="day-cost">Стоимость в сутки (Р):</p>
-            <table>
-              <tr>
-                <td>
-                  от 0
-                </td>
-                <td>
-                  до 3000
-                </td>
-              </tr>
-            </table>
-            <input type="range" min="0" max="3000">
-            <p class="search-show">
-              <a href="#" class="btn">Показать</a>
-            </p>
+            <div class="filter-range-title">Стоимость в сутки (р):</div>
+            <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button class="btn-transparent" type="submit">Показать</button>
           </div>
         </form>
       </section>
@@ -99,8 +97,8 @@
           </ul>
         </div>
         <div class="sorting">
-          <span class="increase"></span>
-          <span class="decrease"></span>
+          <span class="increase">По возрастанию</span>
+          <span class="decrease active">По убыванию</span>
         </div>
       </section>
       <article class="quest clearfix">
@@ -161,9 +159,7 @@
         </section>
         <section class="footer-copyright">
           <span>Website by</span>
-          <a href="https://htmlacademy.ru">
-            <img src="img\html-logo.png" width="113" height="39" alt="HTML Academy">
-          </a>
+          <a href="https://htmlacademy.ru">Website by HTML Academy></a>
         </section>
       </footer>
     </div>
