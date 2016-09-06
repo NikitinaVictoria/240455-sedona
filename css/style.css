@@ -25,23 +25,42 @@ body {
 
 .main-navigation {
   width: 100%;
+  padding: 0 73px;
+  box-sizing: border-box;
+  position: relative;
 }
 
 .main-navigation ul {
   padding: 0;
   margin: 0;
   list-style: none;
-  position: relative;
 }
 
 .main-navigation li {
   width: 20%;
-  float: left;
+  box-sizing: border-box;
   padding-top: 14px;
   padding-bottom: 16px;
   font-size: 14px;
   line-height: 26px;
   text-align: center;
+  float: left;
+}
+
+.main-navigation li:first-child {
+  text-align: left;
+}
+
+.main-navigation li:last-child {
+  text-align: right;
+}
+
+.main-navigation li:nth-child(2) {
+  margin-right: 10%;
+}
+
+.main-navigation li:nth-child(3) {
+  margin-left: 10%;
 }
 
 .main-navigation a {
@@ -57,7 +76,7 @@ body {
   color: #D2D2D2;
 }
 
-.main-navigation .active a{
+.main-navigation .active a {
   color: #766357;
 }
 
@@ -69,26 +88,13 @@ body {
   color: #766357;
 }
 
-li.index-logo {
-  width: 8%;
-  margin-top: -14px;
-  margin-bottom: -45px;
-  left: -21px;
-  position: relative;
-}
-
-li.nav-about {
-  padding-left: 6%;
-  text-align: left;
-}
-
-li.nav-gallery {
-  text-align: left;
-}
-
-li.nav-map,
-li.nav-hotels {
-  text-align: right;
+.index-logo {
+  width: 145px;
+  height: 71px;
+  top: 0;
+  left: 50%;
+  margin-left: -72.5px;
+  position: absolute;
 }
 
 .footer-hashtag,
@@ -356,6 +362,7 @@ h1 {
 
 .find-hotel-form {
   position: relative;
+  z-index: 1;
   color: inherit;
 }
 
@@ -596,12 +603,14 @@ h1 {
 .container-index .index-footer {
   margin-top: -120px;
   background-color: rgba(255, 255, 255, .8);
+  position: relative;
+  z-index: 2;
 }
 
 .search {
-  background-image: url("../img/intro.jpg");
-  background-position: 100% -256px;
-  background-size: 100%;
+  background-image: url("../img/intro-blur.jpg");
+  background-position: center center;
+  background-size: cover;
   padding-bottom: 10px;
 }
 
@@ -668,7 +677,7 @@ input[type="checkbox"]:checked + label::after {
   background-position: -10px -711px;
 }
 
-input[type="checkbox"][disabled="check-off"] + label::before {
+input[type="checkbox"]:disabled + label::before {
   content: "";
   position: absolute;
   top: 0;
@@ -680,7 +689,7 @@ input[type="checkbox"][disabled="check-off"] + label::before {
   background-position: -10px -627px;
 }
 
-input[type="checkbox"][disabled="check-on"] + label::before {
+input[type="checkbox"]:checked:disabled + label::after {
   content: "";
   position: absolute;
   top: 0;
