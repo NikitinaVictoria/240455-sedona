@@ -32,6 +32,7 @@ form.addEventListener('submit', function(event) {
     localStorage.setItem('children', children.value);
   }
 });
+<<<<<<< HEAD
 
 window.addEventListener('keydown', function(event) {
   if (event.keyCode === 27) {
@@ -40,3 +41,44 @@ window.addEventListener('keydown', function(event) {
     }
   }
 });
+=======
+
+window.addEventListener('keydown', function(event) {
+  if (event.keyCode === 27) {
+    if (link_click.classList.contains('move-form')) {
+      link_click.classList.remove('move-form');
+    }
+  }
+});
+
+
+/* Добавлена карта */
+window.onload = (function() {
+  if (typeof ymaps == 'undefined') {
+    return;
+  } else {
+    ymaps.ready(init);
+    var myMap,
+      myPlacemark;
+
+    function init() {
+      myMap = new ymaps.Map('sedona-map', {
+        center: [34.86607220, -111.76359320],
+        zoom: 17,
+        type: 'yandex#hybrid',
+        controls: []
+      });
+
+      myMap.behaviors.disable('scrollZoom');
+
+      myPlacemark = new ymaps.Placemark([34.86607220, -111.76359320], {
+        hintContent: 'Sedona', balloonContent: 'Welcome to the gorgeous Sedona'
+      }, {
+        iconColor: '#f95d51'
+      });
+
+      myMap.geoObjects.add(myPlacemark);
+    }
+  }
+})();
+>>>>>>> origin/master
