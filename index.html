@@ -39,10 +39,10 @@
       </div>
       <section class="features clearfix">
         <div class="features-intro">
-          <p class="bla">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</p>
+          <p>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</p>
           <p class="excerpt">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
-        <div class="feature-sight">
+        <div class="feature-sight town">
             <p class="features-name">Настоящий<br>городок</p>
             <p class="number">— № 1 —</p>
             <p class="content">Седона — не аттракцион для туристов,<br>там течет своя жизнь</p>
@@ -92,9 +92,9 @@
         <h2>Заинтересовались?</h2>
         <p class="desc">Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <section class="search-hotel">
-          <div class="modal-content">
-            <button type="button" value="Поиск гостиницы в седоне">Поиск гостиницы в Cедоне</button>
+        <section class="find-hotel">
+          <button class="find-hotel-btn" type="button">Поиск гостиницы в Cедоне</button>
+          <div class="find-hotel-form">
             <form action="#" method="post">
               <p class="arrival">
                 <span>Дата заезда:</span>
@@ -105,7 +105,7 @@
               <p class="departure">
                 <span>Дата выезда:</span>
                 <label for="departure-date"></label>
-                <input id="departure-date" type="text" placeholder="4 июля 2016">
+                <input id="departure-date" type="text" placeholder="4 июля  2016">
                 <span class="icon-calendar">Дата выезда</span>
               </p>
               <p>
@@ -114,21 +114,22 @@
                 <span class="adults icon-minus">-</span>
                 <input id="adults" type="text" name="adults" placeholder="2">
                 <span class="adults icon-plus">+</span>
-                <span class="">Дети:</span>
+                <span>Дети:</span>
                 <label for="children"></label>
                 <span class="children icon-minus">-</span>
                 <input name="children" type="text" id="children" placeholder="0">
                 <span class="children icon-plus">+</span>
               </p>
-              <button class="btn" type="submit" value="найти">Найти</button>
+              <button class="quest-btn" type="submit" value="найти">Найти</button>
             </form>
           </div>
         </section>
-        <div class="sedona-map"></div>
+        <div class="sedona-map">
+        </div>
       </section>
     </main>
-    <div class="container">
-      <footer class="main-footer clearfix">
+    <div class="container container-index">
+      <footer class="main-footer index-footer clearfix">
         <section class="footer-hashtag">
           <a href="#">#Visitsedona</a>
         </section>
@@ -143,5 +144,6 @@
         </section>
       </footer>
     </div>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
