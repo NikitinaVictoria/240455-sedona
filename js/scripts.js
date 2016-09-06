@@ -20,7 +20,6 @@ link_click.addEventListener('click', function(event) {
     children.value = storage;
   }
   arrival.focus();
-
 });
 
 form.addEventListener('submit', function(event) {
@@ -32,16 +31,6 @@ form.addEventListener('submit', function(event) {
     localStorage.setItem('children', children.value);
   }
 });
-<<<<<<< HEAD
-
-window.addEventListener('keydown', function(event) {
-  if (event.keyCode === 27) {
-    if (link_click.classList.contains('move-form')) {
-      link_click.classList.remove('move-form');
-    }
-  }
-});
-=======
 
 window.addEventListener('keydown', function(event) {
   if (event.keyCode === 27) {
@@ -51,8 +40,6 @@ window.addEventListener('keydown', function(event) {
   }
 });
 
-
-/* Добавлена карта */
 window.onload = (function() {
   if (typeof ymaps == 'undefined') {
     return;
@@ -81,4 +68,3 @@ window.onload = (function() {
     }
   }
 })();
->>>>>>> origin/master
