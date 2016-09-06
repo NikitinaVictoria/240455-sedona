@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/stylecompressed.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -40,7 +40,7 @@
             <p class="content">Седона — не аттракцион для туристов,<br>там течет своя жизнь</p>
         </div>
         <div class="picture-town">
-          <img src="img/real-town.jpg " width="100%" height="auto" alt="Седона">
+          <img src="img/real-town.jpg" width="800" height="401" alt="Седона">
         </div>
         <div class="wrapper clearfix">
           <div class="feature-joy joy-house">
@@ -57,7 +57,7 @@
           </div>
         </div>
         <div class="picture-bridge">
-          <img src="img/bridge.jpg " width="100%" height="auto" alt="Мост дьявола">
+          <img src="img/bridge.jpg" width="800" height="400" alt="Мост дьявола">
         </div>
         <div class="feature-sight">
           <p class="features-name">Там есть<br>мост дьявола</p>
@@ -89,24 +89,24 @@
           <div class="find-hotel-form">
             <form action="#" method="post">
               <p class="arrival">
-                <span>Дата заезда:</span>
+                <span class="input-subs">Дата заезда:</span>
                 <label for="arrival-date"></label>
                 <input id="arrival-date" type="text" placeholder="24 апреля 2016">
                 <span class="icon-calendar">Дата заезда</span>
               </p>
               <p class="departure">
-                <span>Дата выезда:</span>
+                <span class="input-subs">Дата выезда:</span>
                 <label for="departure-date"></label>
                 <input id="departure-date" type="text" placeholder="4 июля  2016">
                 <span class="icon-calendar">Дата выезда</span>
               </p>
               <p>
-                <span>Взрослые:</span>
+                <span class="input-subs">Взрослые:</span>
                 <label for="adults"></label>
                 <span class="adults icon-minus">-</span>
                 <input id="adults" type="text" name="adults" placeholder="2">
                 <span class="adults icon-plus">+</span>
-                <span>Дети:</span>
+                <span class="input-subs">Дети:</span>
                 <label for="children"></label>
                 <span class="children icon-minus">-</span>
                 <input name="children" type="text" id="children" placeholder="0">
@@ -136,6 +136,6 @@
       </footer>
     </div>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript" defer></script>
-    <script src="js/scriptscompressed.js" defer></script>
+    <script src="js/scripts.min.js" defer></script>
   </body>
 </html>

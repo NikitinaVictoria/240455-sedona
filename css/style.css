@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
   box-shadow: 0 10px 20px 0 #dbdbdb;
@@ -183,9 +183,11 @@ body {
 }
 
 .footer-copyright span {
-  line-height: 39px;
+  display: inline-block;
+  line-height: 26px;
   font-size: 14px;
   vertical-align: top;
+  margin-top: 5px;
 }
 
 .footer-copyright a {
@@ -237,7 +239,7 @@ body {
 .lead-desc {
   width: 256px;
   height: 86px;
-  background: url("../img/Welcome.png");
+  background: url("../img/to-welcome.png");
   margin-left: auto;
   margin-right: auto;
 }
@@ -245,7 +247,7 @@ body {
 h1 {
   width: 458px;
   height: 78px;
-  background-image: url("../img/Sedona.png");
+  background-image: url("../img/sedona.png");
   margin-top: 52px;
   margin-left: auto;
   margin-right: auto;
@@ -254,7 +256,7 @@ h1 {
 .lead-slogan {
   width: 296px;
   height: 80px;
-  background-image: url("../img/the Grand Canyon.png");
+  background-image: url("../img/the-grand-canyon.png");
   margin-top: 56px;
   margin-left: auto;
   margin-right: auto;
@@ -394,12 +396,18 @@ h1 {
   left: 50%;
   padding: 55px 0;
   margin-left: -284px;
-  line-height: 38px;
+  line-height: 26px;
   vertical-align: middle;
   text-align: center;
   background-color: #ffffff;
   color: inherit;
   box-shadow: 0 20px 30px -25px  #000101;
+}
+
+.input-subs {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 10px;
 }
 
 .find-hotel-form p {
@@ -546,15 +554,15 @@ h1 {
   background-position: -10px -452px;
  }
 
- .children.icon-minus:hover,
- .adults.icon-minus:hover {
+.children.icon-minus:hover,
+.adults.icon-minus:hover {
    width: 12px;
    height: 3px;
    background-position: -10px -398px;
  }
 
- .children.icon-minus:active,
- .adults.icon-minus:active {
+.children.icon-minus:active,
+.adults.icon-minus:active {
    width: 12px;
    height: 3px;
    background-position: -10px -375px;
@@ -574,12 +582,12 @@ h1 {
 }
 
 .quest-btn:hover {
-    background-color: #669ec0;
+  background-color: #669ec0;
 }
 
 .quest-btn:active {
-    background-color: #5496bd;
-    color: #94b9d2;
+  background-color: #5496bd;
+  color: #94b9d2;
 }
 
 .sedona-map {
@@ -630,7 +638,7 @@ h1 {
 .search-price {
   width: 31.06060606060606%;
   float: left;
-    margin-top: 28px;
+  margin-top: 28px;
 }
 
 .infrastructure,
@@ -1044,8 +1052,13 @@ input[type="checkbox"]:checked:disabled + label::after {
   background-color: #f2f2f2;
   width: 104px;
   margin-left: 100px;
-  line-height: 27px;
+  line-height: 21px;
   text-align: center;
+}
+
+.hotel-name {
+  line-height: 26px;
+  margin-top: 28px;
 }
 
 .hotel-name a {
