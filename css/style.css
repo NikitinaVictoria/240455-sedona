@@ -294,6 +294,7 @@ h1 {
   height: 256px;
   width: 66.51%;
   float: right;
+  overflow: hidden;
 }
 
 .feature-sight {
@@ -341,7 +342,6 @@ h1 {
 
 .features-name {
   margin-bottom: 24px;
-  margin-top: 24px;
   margin-right: 77.5px;
   margin-left: 77.5px;
 }
