@@ -239,7 +239,7 @@ img {
   background-position: 100% 100%, 100%;
   background-size: 100% 57px, 100% 100%;
   background-repeat: no-repeat;
-  background-color: #ffffff;
+  background-color: #81b3d2;
 }
 
 .lead-desc {
@@ -644,7 +644,7 @@ h1 {
 .search {
   background-image: url("../img/intro-blur.jpg");
   background-position: center center;
-  background-color: #ffffff;
+  background-color: #81b3d2;
   background-size: cover;
   padding-bottom: 10px;
 }
