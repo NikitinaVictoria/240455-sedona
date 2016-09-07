@@ -5,7 +5,7 @@
     <title>Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.min.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -31,83 +31,85 @@
       </div>
       <section class="features clearfix">
         <div class="features-intro">
-          <p>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</p>
+          <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
           <p class="excerpt">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
-        <div class="feature-sight town">
-            <p class="features-name">Настоящий<br>городок</p>
+        <div class="sight-wrapper clearfix">
+          <div class="feature-sight">
+            <p class="features-name">Настоящий городок</p>
             <p class="number">— № 1 —</p>
-            <p class="content">Седона — не аттракцион для туристов,<br>там течет своя жизнь</p>
+            <p class="content">Седона — не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
+          <div class="picture-town">
+            <img src="img/real-town.jpg" width="800" height="256" alt="Седона">
+          </div>
         </div>
-        <div class="picture-town">
-          <img src="img/real-town.jpg" width="800" height="401" alt="Седона">
-        </div>
-        <div class="wrapper clearfix">
+        <div class="feature-joy-wrapper clearfix">
           <div class="feature-joy joy-house">
             <p class="features-name">Жилье</p>
-            <p class="text">Рекомендуем пожить в настоящем<br>мотеле, все как в кино!</p>
+            <p class="text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
           <div class="feature-joy joy-burger">
             <p class="features-name">Еда</p>
-            <p class="text">Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
+            <p class="text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
           <div class="feature-joy joy-souvenir">
             <p class="features-name">Сувениры</p>
-            <p class="text">Не только китайского, но и местного<br>производства!</p>
+            <p class="text">Не только китайского, но и местного производства!</p>
           </div>
         </div>
-        <div class="picture-bridge">
-          <img src="img/bridge.jpg" width="800" height="400" alt="Мост дьявола">
+        <div class="sight-wrapper clearfix">
+          <div class="picture-bridge">
+            <img src="img/bridge.jpg" width="800" height="256" alt="Мост дьявола">
+          </div>
+          <div class="feature-sight">
+            <p class="features-name">Там есть мост дьявола</p>
+            <p class="number">— № 2 —</p>
+            <p class="content">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
         </div>
-        <div class="feature-sight">
-          <p class="features-name">Там есть<br>мост дьявола</p>
-          <p class="number">— № 2 —</p>
-          <p class="content">Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
-        </div>
-        <div class="feature-plus">
-          <p class="features-name">Небольшая<br>площадь</p>
-          <p class="number">— № 3 —</p>
-          <p class="text">Все достопримечательности<br>находятся очень близко</p>
-        </div>
-        <div class="feature-plus">
-          <p class="features-name">Красивая<br>дорога</p>
-          <p class="number">— № 4 —</p>
-          <p class="text">Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
-        </div>
-        <div class="feature-plus">
-          <p class="features-name">Мало<br>туристов</p>
-          <p class="number">— № 5 —</p>
-          <p class="text">Большинство едет в Гранд Каньон и<br>толпится там</p>
+        <div class="feature-plus-wrapper clearfix">
+          <div class="feature-plus">
+            <p class="features-name">Небольшая площадь</p>
+            <p class="number">— № 3 —</p>
+            <p class="text">Все достопримечательности находятся очень близко</p>
+          </div>
+          <div class="feature-plus">
+            <p class="features-name">Красивая дорога</p>
+            <p class="number">— № 4 —</p>
+            <p class="text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+          <div class="feature-plus">
+            <p class="features-name">Мало туристов</p>
+            <p class="number">— № 5 —</p>
+            <p class="text">Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
         </div>
       </section>
       <section class="footer">
         <h2>Заинтересовались?</h2>
-        <p class="desc">Укажите предполагаемые даты поездки,<br>
+        <p class="desc">Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <section class="find-hotel">
           <button class="find-hotel-btn" type="button">Поиск гостиницы в Cедоне</button>
           <div class="find-hotel-form">
             <form action="#" method="post">
               <p class="arrival">
-                <span class="input-subs">Дата заезда:</span>
-                <label for="arrival-date"></label>
+                <label class="input-subs" for="arrival-date">Дата заезда:</label>
                 <input id="arrival-date" type="text" placeholder="24 апреля 2016">
-                <span class="icon-calendar">Дата заезда</span>
+                <span class="icon-calendar">Arrival date</span>
               </p>
               <p class="departure">
-                <span class="input-subs">Дата выезда:</span>
-                <label for="departure-date"></label>
+                <label class="input-subs" for="departure-date">Дата выезда:</label>
                 <input id="departure-date" type="text" placeholder="4 июля  2016">
-                <span class="icon-calendar">Дата выезда</span>
+                <span class="icon-calendar">Departure date</span>
               </p>
               <p>
-                <span class="input-subs">Взрослые:</span>
-                <label for="adults"></label>
+                <label class="input-subs" for="adults">Взрослые:</label>
                 <span class="adults icon-minus">-</span>
                 <input id="adults" type="text" name="adults" placeholder="2">
                 <span class="adults icon-plus">+</span>
-                <span class="input-subs">Дети:</span>
-                <label for="children"></label>
+                <label class="input-subs" for="children">Дети:</label>
                 <span class="children icon-minus">-</span>
                 <input name="children" type="text" id="children" placeholder="0">
                 <span class="children icon-plus">+</span>

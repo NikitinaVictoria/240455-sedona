@@ -9,6 +9,11 @@ body {
   background-color: #f2f2f2;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -234,6 +239,7 @@ body {
   background-position: 100% 100%, 100%;
   background-size: 100% 57px, 100% 100%;
   background-repeat: no-repeat;
+  background-color: #ffffff;
 }
 
 .lead-desc {
@@ -270,6 +276,8 @@ h1 {
   padding-top: 40px;
   padding-bottom: 37px;
   text-align: center;
+  padding-left: 350px;
+  padding-right: 350px;
 }
 
 .excerpt {
@@ -277,36 +285,46 @@ h1 {
   font-size: 14px;
 }
 
-.feature-sight {
-  min-height: 225px;
-  width: 33.49%;
+.sight-wrapper {
+  min-height: 256px;
+  background-color: #81b3d2;
+}
+
+.picture-town {
+  height: 256px;
+  width: 66.51%;
   float: right;
+}
+
+.feature-sight {
+  min-height: 256px;
+  width: 33.49%;
+  float: left;
   padding-top: 31px;
   background-color: #81b3d2;
   text-align: center;
-}
-
-.feature-sight.town {
-  float: left;
+  padding-left: 48px;
+  padding-right: 48px;
+  box-sizing: border-box;
 }
 
 .number {
   margin-bottom: 20px;
 }
 
-.picture-town {
-  width: 66.51%;
-  height: 256px;
-  float: right;
-  overflow: hidden;
+.feature-joy-wrapper {
+  min-height: 330px;
 }
 
 .feature-joy {
-  min-height: 193px;
+  min-height: 330px;
   width: 33.333333333333336%;
   float: left;
   text-align: center;
   padding-top: 137px;
+  padding-left: 55px;
+  padding-right: 55px;
+  box-sizing: border-box;
 }
 
 .joy-house {
@@ -324,22 +342,31 @@ h1 {
 .features-name {
   margin-bottom: 24px;
   margin-top: 24px;
+  margin-right: 77.5px;
+  margin-left: 77.5px;
 }
 
 .picture-bridge {
   height: 256px;
   width: 66.51%;
   float: left;
-  overflow: hidden;
+}
+
+.feature-plus-wrapper {
+  min-height: 256px;
+  background-color: #EEEEEE;
 }
 
 .feature-plus {
-  min-height: 236px;
+  min-height: 256px;
   width: 33.333333333333336%;
   float: left;
   padding-top: 24px;
   text-align: center;
   background-color: #EEEEEE;
+  padding-left: 60px;
+  padding-right: 60px;
+  box-sizing: border-box;
 }
 
 .find-hotel {
@@ -408,6 +435,7 @@ h1 {
   display: inline-block;
   vertical-align: middle;
   margin-top: 10px;
+  font-weight: bold;
 }
 
 .find-hotel-form p {
@@ -433,7 +461,7 @@ h1 {
   outline: 2px solid #e5e5e5;
 }
 
-.mfind-hotel-form .arrival [type="text"] {
+.find-hotel-form .arrival [type="text"] {
   margin-left: 21px;
 }
 
@@ -598,7 +626,6 @@ h1 {
   background-repeat: no-repeat;
 }
 
-
 .sedona-map {
   height: 595px;
 }
@@ -617,6 +644,7 @@ h1 {
 .search {
   background-image: url("../img/intro-blur.jpg");
   background-position: center center;
+  background-color: #ffffff;
   background-size: cover;
   padding-bottom: 10px;
 }
@@ -981,11 +1009,27 @@ input[type="checkbox"]:checked:disabled + label::after {
   margin-right: 30px;
 }
 
-.info h3 {
-  line-height: 0;
-  margin-top: 42px;
-  margin-bottom: 20px;
-  margin-left: 30px;
+.info p {
+  margin-top: 0;
+}
+
+a.hotel-name {
+  display: inline-block;
+  line-height: 26px;
+  font-size: 21px;
+  font-weight: bold;
+  margin-top: 28px;
+  color: #000000;
+  margin-bottom: 8px;
+  text-decoration: none;
+}
+
+a.hotel-name:hover {
+  color: #81b3d2;
+}
+
+a.hotel-name:active {
+  color: #D2D2D2;
 }
 
 .more,
@@ -1056,24 +1100,6 @@ input[type="checkbox"]:checked:disabled + label::after {
   text-align: center;
 }
 
-.hotel-name {
-  line-height: 26px;
-  margin-top: 28px;
-}
-
-.hotel-name a {
-  text-decoration: none;
-  color: #000000;
-}
-
-.hotel-name a:hover {
-  color: #81b3d2;
-}
-
-.hotel-name a:active {
-  color: #D2D2D2;
-}
-
 .features-intro,
 .features-name,
 button,
@@ -1106,6 +1132,7 @@ h2 {
   line-height: 24px;
   text-align: center;
   margin-bottom: 47px;
+  white-space: pre-wrap;
 }
 
 .footer-copyright span,
