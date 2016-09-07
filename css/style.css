@@ -75,15 +75,15 @@ body {
   color: #D2D2D2;
 }
 
-.main-navigation .active a {
+.main-navigation .nav-active a {
   color: #766357;
 }
 
-.main-navigation .active a:hover {
+.main-navigation .nav-active a:hover {
   color: #604e43;
 }
 
-.main-navigation .active a:active {
+.main-navigation .nav-active a:active {
   color: #766357;
 }
 
@@ -247,7 +247,7 @@ body {
 h1 {
   width: 458px;
   height: 78px;
-  background-image: url("../img/sedona.png");
+  background-image: url("../img/sedona-title.png");
   margin-top: 52px;
   margin-left: auto;
   margin-right: auto;
